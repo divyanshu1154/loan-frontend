@@ -1,0 +1,86 @@
+.admin-navbar{
+    color: green;
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.admin-dashboard{
+    font-family: Arial, sans-serif; 
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-sidebar ul{
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    background-color: green;
+}
+
+.admin-dashboard ul li{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: 0.5px solid black;
+    width: 150px;
+}
+
+.admin-main{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.admin-stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-box{
+    background-color: green;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-content{
+    padding: 0 10px;
+}
+
+
+select{
+    padding:10px;
+    cursor: pointer;
+    border: none;
+}
+
+select.status-approved {
+  background-color: #81C784;
+}
+
+select.status-pending {
+  background-color: #FFF176;
+}
+
+select.status-rejected {
+  background-color: #FF6B6B;
+}
+  
