@@ -7,7 +7,7 @@ const AdminDashboard: React.FC = () => {
   const [loans, setLoans] = useState<Loan[]>([]);
 
   useEffect(() => {
-    const URL = "http://localhost:5000/api/company/loans";
+    const URL = "https://loan-backend-je6j.onrender.com/api/company/loans";
     axios.get(URL)
       .then(response => setLoans(response.data))
       .catch(error => console.error(error));
@@ -15,7 +15,7 @@ const AdminDashboard: React.FC = () => {
 
   const handleStatusChange = async (loanId: string, status: "Approved" | "Rejected") => {
     try {
-      const URL = `http://localhost:5000/api/loans/status`;
+      const URL = `https://loan-backend-je6j.onrender.com/api/loans/status`;
       await axios.patch(URL, { loanId, status });
       // Update the local state to reflect the change
       setLoans(prevLoans => 

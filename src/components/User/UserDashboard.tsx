@@ -9,7 +9,7 @@ const UserDashboard: React.FC = () => {
   const [applyLoan, setApplyLoan] = useState(false);
 
   useEffect(() => {
-    const URL = "http://localhost:5000/api/user/loans";
+    const URL = "https://loan-backend-je6j.onrender.com/api/user/loans";
     axios.get(URL).then(response => setLoans(response.data)).catch(error => console.error(error));
   }, []);
 

@@ -30,7 +30,7 @@ const ApplyLoanForm: React.FC<ApplyLoanFormProps> = ({ onClose }) => {
     };
 
     try {
-      const URL = "http://localhost:5000/api/loans";
+      const URL = "https://loan-backend-je6j.onrender.com/api/loans";
       const response = await axios.post(URL, loanData);
       setMessage(response.data.message);
       // Clear form fields after submission

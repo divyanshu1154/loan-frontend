@@ -10,7 +10,7 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
 
   const handleLogin = async (role: string) => {
-    const URL = "http://localhost:5000/api/auth/login";
+    const URL = "https://loan-backend-je6j.onrender.com/api/auth/login";
     try {
       const response = await axios.post(URL, { email, password });
       if(response.status === 200){

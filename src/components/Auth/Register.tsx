@@ -10,7 +10,7 @@ const Register: React.FC = () => {
   const navigate = useNavigate();
 
   const handleRegister = async (role: string) => {
-    const URL = (role === "admin") ? "http://localhost:5000/api/auth/register" : "http://localhost:5000/api/auth/admin/register"
+    const URL = (role === "admin") ? "https://loan-backend-je6j.onrender.com/api/auth/register" : "https://loan-backend-je6j.onrender.com/api/auth/admin/register"
     try {
       const response = await axios.post(URL, {
         name,
